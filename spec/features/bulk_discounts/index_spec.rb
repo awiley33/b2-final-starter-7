@@ -113,4 +113,21 @@ RSpec.describe "Bulk Discounts Index Page" do
       expect(page).to have_content("Your Discount Has Been Deleted")
     end
   end 
+
+  describe "holidays section" do
+    it "has a header titled Upcoming Holidays" do
+      expect(page).to have_content("Upcoming Holidays")
+    end
+
+    it "displays the name and date of the next 3 US holidays" do
+      expect(page).to have_content("Labour Day")
+      expect(page).to have_content("Columbus Day")
+      expect(page).to have_content("Veterans Day")
+      save_and_open_page
+      expect(page).to have_content("Veterans Day")
+      expect(page).to have_content("Veterans Day")
+      expect(page).to have_content("Veterans Day")
+    end
+  end
+
 end
