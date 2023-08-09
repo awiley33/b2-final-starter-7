@@ -93,15 +93,4 @@ RSpec.describe "Bulk Discounts New Page" do
       expect(page).to have_content("Please complete all fields to continue.")
     end
   end
-
-  describe "submission of unaccepted characters" do
-    xit "automatically corrects commonly predicted user entries" do
-      fill_in "Percentage discount", with: "35%"
-      fill_in "Quantity threshold", with: "30"
-      click_button "Submit"
-
-      # expect
-    end
-  end
 end
-# ADD EDGE CASES HERE FOR FILLING IN FORM WITH WRONG DATA TYPES

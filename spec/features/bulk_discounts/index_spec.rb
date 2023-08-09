@@ -123,7 +123,6 @@ RSpec.describe "Bulk Discounts Index Page" do
       expect(page).to have_content("Labour Day")
       expect(page).to have_content("Columbus Day")
       expect(page).to have_content("Veterans Day")
-      save_and_open_page
       expect(page).to have_content("Veterans Day")
       expect(page).to have_content("Veterans Day")
       expect(page).to have_content("Veterans Day")
