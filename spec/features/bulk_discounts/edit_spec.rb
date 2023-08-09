@@ -104,8 +104,4 @@ RSpec.describe "Bulk Discounts Edit Page" do
       expect(page).to have_content("Enter valid updates to continue.")
     end
   end
-end 
-
-# INCLUDE EDGE CASE TESTING FOR INVALID UPDATE ENTRIES
-
-# ADD EDGE CASE TESTING FOR SQL INJECTION ATTACK
+end
