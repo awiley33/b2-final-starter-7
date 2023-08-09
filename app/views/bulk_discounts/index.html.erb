@@ -17,3 +17,9 @@
 <br>
 
 <p><%= button_to "Add New Discount", new_merchant_bulk_discount_path(@merchant), method: :get %></p>
+
+<h2>Upcoming Holidays</h2>
+<% @holidays.each do |holiday| %>
+  <p>- <%= holiday.name %>, 
+  <%= holiday.date %></p>
+<% end %>
